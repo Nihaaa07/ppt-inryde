@@ -1,0 +1,59 @@
+.slide3-container {
+  width: 1200px;
+  margin: 0 auto;
+  padding-top: 50px;
+  font-family: "Poppins", sans-serif;
+}
+
+.slide3-title {
+  font-size: 52px;
+  font-weight: 700;
+  color: #d62839;
+  text-align: left;
+}
+
+.slide3-sub {
+  margin-top: 10px;
+  font-size: 22px;
+  color: #333;
+  max-width: 900px;
+}
+
+/* Grid Layout */
+.slide3-grid {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px 60px;
+}
+
+/* Each Row */
+.sc-row {
+  display: flex;
+  gap: 25px;
+  align-items: flex-start;
+}
+
+.sc-icon {
+  width: 70px;
+  height: 70px;
+  background: #fff5f7;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #d62839;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.sc-row h2 {
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.sc-row p {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.6;
+}

@@ -1,0 +1,105 @@
+.slide10-container {
+  display: flex;
+  gap: 60px;
+  padding: 60px 90px;
+  background: #f8f8f8;
+  font-family: "Inter", sans-serif;
+}
+
+/* LEFT SIDE */
+.slide10-left {
+  flex: 1;
+}
+
+.slide10-title {
+  font-size: 48px;
+  font-weight: 800;
+  color: #e63946;
+  line-height: 1.2;
+}
+
+.slide10-subtitle {
+  margin-top: 24px;
+  font-size: 20px;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* Verified Card */
+.verified-card {
+  margin-top: 40px;
+  background: #fff;
+  padding: 32px;
+  width: 400px;
+  border-radius: 20px;
+  border-left: 8px solid #ffd54f;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+}
+
+.verified-value {
+  font-size: 32px;
+  font-weight: 800;
+  color: #111;
+}
+
+.verified-desc {
+  margin-top: 8px;
+  font-size: 18px;
+  color: #666;
+}
+
+/* RIGHT SIDE */
+.slide10-steps {
+  flex: 1.2;
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+}
+
+.step-card {
+  display: flex;
+  gap: 20px;
+  background: #fff;
+  padding: 26px 28px;
+  border-radius: 20px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+}
+
+.step-number {
+  color: #777;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
+.step-title {
+  font-size: 24px;
+  margin-top: 4px;
+  font-weight: 700;
+}
+
+.step-desc {
+  margin-top: 6px;
+  color: #666;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* Icons */
+.step-icon {
+  width: 68px;
+  height: 68px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.step-icon img {
+  width: 34px;
+}
+
+/* Colors */
+.pink-bg { background: #ffe6eb; }
+.yellow-bg { background: #fff7cc; }
+.red-bg { background: #ffe5e5; }
+.gold-bg { background: #fff2d6; }

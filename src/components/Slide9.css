@@ -1,0 +1,92 @@
+.slide9-container {
+  padding: 60px 90px;
+  background: #f8f8f8;
+  font-family: "Inter", sans-serif;
+  text-align: center;
+}
+
+.slide9-title {
+  font-size: 46px;
+  font-weight: 800;
+  color: #e63946;
+  margin-bottom: 5px;
+}
+
+.slide9-subtitle {
+  font-size: 20px;
+  color: #555;
+  margin-bottom: 50px;
+}
+
+.slide9-metrics {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  margin-top: 20px;
+}
+
+/* Metric Cards */
+.metric-card {
+  background: #fff;
+  padding: 40px 30px;
+  border-radius: 28px;
+  box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease;
+}
+
+.metric-card:hover {
+  transform: translateY(-6px);
+}
+
+/* Shadow Color Variants */
+.red-shadow { border-bottom: 8px solid #ff7b7b; }
+.yellow-shadow { border-bottom: 8px solid #ffd54f; }
+.black-shadow { border-bottom: 8px solid #333333; }
+
+/* Icons */
+.metric-icon {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto 20px auto;
+}
+
+.red-bg { background: #ffe5e5; }
+.yellow-bg { background: #fff5cc; }
+.black-bg { background: #e6e6e6; }
+
+.metric-icon img {
+  width: 34px;
+}
+
+/* Metric Numbers */
+.metric-value {
+  font-size: 48px;
+  font-weight: 800;
+  margin: 0;
+  color: #111;
+}
+
+.metric-small {
+  font-size: 22px;
+  font-weight: 600;
+  margin-left: 4px;
+}
+
+/* Labels & Description */
+.metric-label {
+  margin-top: 10px;
+  font-size: 20px;
+  font-weight: 700;
+  color: #222;
+}
+
+.metric-desc {
+  font-size: 16px;
+  color: #666;
+  margin-top: 10px;
+  line-height: 1.5;
+}

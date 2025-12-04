@@ -1,0 +1,52 @@
+.slide21 {
+  padding: 40px;
+}
+
+.slide-title {
+  color: #d62839;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.slide-desc {
+  margin-bottom: 40px;
+  opacity: 0.8;
+}
+
+.notif-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 28px;
+}
+
+.notif-card {
+  background: white;
+  padding: 24px;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
+.red-border { border-top: 4px solid #d62839; }
+.yellow-border { border-top: 4px solid #ffc300; }
+.blue-border { border-top: 4px solid #007bff; }
+.black-border { border-top: 4px solid #000; }
+
+.icon-wrap {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 14px;
+}
+
+.red-bg { background: rgba(214,40,57,0.12); color: #d62839; }
+.yellow-bg { background: rgba(255,195,0,0.2); color: #b38700; }
+.blue-bg { background: rgba(0,123,255,0.2); color: #004c99; }
+.black-bg { background: rgba(0,0,0,0.12); color: #000; }
+
+.footer {
+  margin-top: 50px;
+  opacity: 0.6;
+}

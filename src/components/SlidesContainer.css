@@ -1,0 +1,26 @@
+.slides-container {
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  flex-direction: row;
+
+  overflow-x: scroll;
+  overflow-y: hidden;
+
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+
+  scrollbar-width: none;
+}
+
+.slides-container::-webkit-scrollbar {
+  display: none;
+}
+
+/* every slide fills the whole screen */
+.slides-container > * {
+  flex: 0 0 100vw;
+  height: 100vh;
+  scroll-snap-align: start;
+}

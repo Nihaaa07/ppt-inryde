@@ -1,0 +1,98 @@
+.slide2-container {
+  position: relative;
+  width: 1200px;
+  height: 630px;     /* Height added */
+  overflow: hidden;  /* Very important */
+  border-radius: 12px;
+  background: #fafafa;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 50px;
+  font-family: "Poppins", sans-serif;
+}
+
+.slide2-title {
+  font-size: 56px;
+  font-weight: 700;
+  color: #d62839;
+  margin-bottom: 10px;
+}
+
+/* Tag strip */
+.tag-strip {
+  margin-bottom: 50px;
+  font-size: 20px;
+  padding: 12px 34px;
+  border-radius: 50px;
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  background: #fff;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+}
+
+.tag-red {
+  color: #d62839;
+  font-weight: 600;
+}
+
+.tag-divider {
+  opacity: 0.5;
+}
+
+.tag-lead {
+  color: #111;
+  font-weight: 600;
+}
+
+/* Card layout */
+.slide2-cards {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.slide2-card {
+  width: 340px;
+  background: #fff;
+  padding: 40px 30px;
+  border-radius: 14px;
+  text-align: left;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.10);
+  border-top: 6px solid transparent;
+}
+
+.card-red {
+  border-color: #d62839;
+}
+
+.card-yellow {
+  border-color: #f1c40f;
+}
+
+.card-black {
+  border-color: #111;
+}
+
+.icon-box {
+  width: 60px;
+  height: 60px;
+  border-radius: 14px;
+  background: #f8f8f8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 25px;
+}
+
+.slide2-card h2 {
+  font-size: 24px;
+  color: #222;
+  margin-bottom: 12px;
+}
+
+.slide2-card p {
+  color: #555;
+  font-size: 15px;
+  line-height: 1.6;
+}

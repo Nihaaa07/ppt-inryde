@@ -1,0 +1,13 @@
+.slide25-container {
+  background: #ffffff;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 4px 30px rgba(0,0,0,0.08);
+}
+
+.chart-wrapper {
+  background: #fff;
+  padding: 25px;
+  border-radius: 18px;
+  box-shadow: 0 3px 15px rgba(0,0,0,0.065);
+}

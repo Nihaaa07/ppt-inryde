@@ -1,0 +1,39 @@
+.slide26-container {
+  background: #fff;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 4px 25px rgba(0,0,0,0.08);
+}
+
+.slide26-header {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.slide26-main {
+  background: #fff7e6;
+  padding: 22px;
+  border-radius: 16px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.slide26-grid {
+  display: flex;
+  gap: 20px;
+}
+
+.slide26-card {
+  flex: 1;
+  background: #fff;
+  padding: 22px;
+  border-radius: 16px;
+  box-shadow: 0 3px 16px rgba(0,0,0,0.06);
+  text-align: center;
+}
+
+.slide26-icon {
+  font-size: 32px;
+  color: #ff8f00;
+  margin-bottom: 10px;
+}
