@@ -1,26 +1,43 @@
+/* Improved slide container for consistent alignment on all slides */
 .slides-container {
-  width: 100vw;
-  height: 100vh;
+width: 100vw;
+height: 100vh;
 
-  display: flex;
-  flex-direction: row;
 
-  overflow-x: scroll;
-  overflow-y: hidden;
+display: flex;
+flex-direction: row;
+align-items: center; /* ensures vertical centering */
 
-  scroll-snap-type: x mandatory;
-  scroll-behavior: smooth;
 
-  scrollbar-width: none;
+overflow-x: scroll;
+overflow-y: hidden;
+
+
+scroll-snap-type: x mandatory;
+scroll-behavior: smooth;
+scroll-padding: 0;
+
+
+scrollbar-width: none;
 }
+
 
 .slides-container::-webkit-scrollbar {
-  display: none;
+display: none;
 }
 
-/* every slide fills the whole screen */
+
+/* Ensure each slide is a full PPT-like screen */
 .slides-container > * {
-  flex: 0 0 100vw;
-  height: 100vh;
-  scroll-snap-align: start;
+flex: 0 0 100vw;
+height: 100vh;
+scroll-snap-align: start;
+
+
+display: flex; /* added for internal centering */
+flex-direction: column; /* PPT-like top-to-bottom layout */
+justify-content: center; /* vertical align */
+align-items: center; /* horizontal align */
+padding: 40px; /* prevent content sticking to edges */
+box-sizing: border-box;
 }

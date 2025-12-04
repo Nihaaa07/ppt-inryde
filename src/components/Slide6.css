@@ -1,118 +1,146 @@
-.slide6-container {
-  display: flex;
-  justify-content: space-between;
-  padding: 60px 80px;
-  background: #f7f9fa;
-  min-height: 100vh;
+/* GLOBAL */
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
+.s6-root {
+  width: 100%;
+  height: calc(100vh - 40px);
+  background: #f7f9fa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 20px;
+  overflow: hidden;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.s6-inner {
+  width: 100%;
+  max-width: 1280px;
+  display: flex;
+  gap: 28px;
+}
+
 /* LEFT SIDE */
-.slide6-left {
-  width: 45%;
+.s6-left {
+  width: 42%;
 }
 
-.slide6-title {
-  font-size: 48px;
-  font-weight: 700;
-  color: #e63950;
+.s6-title {
+  font-size: 34px;              /* reduced */
   line-height: 1.2;
+  font-weight: 800;
+  color: #e63950;
 }
 
-.slide6-subtitle {
-  margin-top: 20px;
-  font-size: 20px;
-  color: #555;
-  width: 85%;
+.s6-desc {
+  margin-top: 12px;
+  font-size: 15px;              /* reduced */
   line-height: 1.5;
+  color: #555;
+  max-width: 90%;
 }
 
-.slide6-left-card {
-  margin-top: 40px;
-  width: 70%;
-  background: white;
-  padding: 25px 30px;
-  border-radius: 20px;
-  border-left: 10px solid #f4c400;
-  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.08);
+.s6-left-card {
+  margin-top: 24px;
+  width: 65%;
+  background: #fff;
+  padding: 14px 18px;           /* reduced */
+  border-radius: 15px;
+  border-left: 8px solid #f4c400;
+  box-shadow: 0 5px 12px rgba(0,0,0,0.08);
 }
 
-.slide6-left-card h2 {
+.s6-left-card h2 {
   margin: 0;
-  font-size: 32px;
-  font-weight: 700;
+  font-size: 24px;              /* reduced */
 }
 
-.slide6-left-card p {
-  margin-top: 6px;
-  font-size: 18px;
+.s6-left-card p {
+  margin-top: 4px;
+  font-size: 14px;              /* reduced */
   color: #444;
 }
 
 /* RIGHT SIDE */
-.slide6-right {
-  width: 50%;
+.s6-right {
+  width: 58%;
+  height: 100%;
+}
+
+.s6-cards-viewport {
+  height: 100%;
+  overflow-y: auto;
   display: flex;
   flex-direction: column;
-  gap: 25px;
+  gap: 14px;                     /* reduced */
+  padding-right: 4px;
 }
 
-.slide6-step-card {
-  background: white;
-  padding: 30px;
-  border-radius: 20px;
-  box-shadow: 0 10px 20px rgba(0,0,0,0.06);
-  position: relative;
-  border-top: 8px solid transparent;
+/* CARD STYLE */
+.s6-card {
+  background: #fff;
+  padding: 16px 18px;           /* reduced */
+  border-radius: 14px;
+  box-shadow: 0 6px 14px rgba(0,0,0,0.05);
 }
 
-.step-label {
-  font-size: 14px;
+.s6-card-head {
+  display: flex;
+  align-items: center;
+  gap: 10px;                    /* reduced */
+}
+
+.s6-step-label {
+  font-size: 11px;              /* reduced */
   font-weight: 700;
   color: #888;
+  min-width: 70px;              /* reduced */
 }
 
-.step-label.grey {
-  color: #555;
-}
-
-.step-icon {
-  width: 60px;
-  height: 60px;
+.s6-icon {
+  width: 36px;                  /* reduced */
+  height: 36px;                 /* reduced */
   border-radius: 50%;
-  background: #ffe7ed;
   display: flex;
-  justify-content: center;
   align-items: center;
-  font-size: 28px;
-  margin-top: 10px;
+  justify-content: center;
+  font-size: 18px;              /* reduced */
 }
 
-.step-icon.yellow {
-  background: #fff7cc;
-}
+.s6-icon.red    { background: #ffe7ed; }
+.s6-icon.yellow { background: #fff7cc; }
+.s6-icon.pink   { background: #ffecef; }
+.s6-icon.grey   { background: #efefef; }
 
-.step-icon.pink {
-  background: #ffecef;
-}
-
-.step-icon.grey {
-  background: #efefef;
-}
-
-.slide6-step-card h3 {
-  margin-top: 15px;
-  font-size: 26px;
+.s6-card h3 {
+  margin: 8px 0 0;
+  font-size: 18px;              /* reduced */
   font-weight: 700;
 }
 
-.slide6-step-card p {
-  margin-top: 10px;
-  font-size: 17px;
+.s6-card p {
+  margin: 6px 0 0;
+  font-size: 14px;              /* reduced */
   color: #444;
-  line-height: 1.4;
+  line-height: 1.4;             /* tighter */
 }
 
-.slide6-step-card.wide {
-  margin-top: 10px;
+.s6-card.wide { padding-bottom: 20px; }
+
+/* MOBILE */
+@media (max-width: 900px) {
+  .s6-inner {
+    flex-direction: column;
+    gap: 18px;
+  }
+  .s6-left, .s6-right {
+    width: 100%;
+  }
+  .s6-cards-viewport {
+    max-height: 60vh;
+  }
 }
