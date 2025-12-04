@@ -1,7 +1,7 @@
 import React from "react";
 import "./Slide19.css";
 import { FiTruck, FiAlertCircle } from "react-icons/fi";
-import { GiMotorcycle } from "react-icons/gi"; // Correct icon
+import { GiMotorcycle } from "react-icons/gi";
 import { FaMotorcycle } from 'react-icons/fa';
 
 export default function Slide19() {
